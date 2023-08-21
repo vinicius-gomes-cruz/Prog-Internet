@@ -7,6 +7,6 @@ async function API() {
     console.log(musicas);
 
     for (let i = 0;i < musicas.artist.albums.item.length;i++){
-        document.getElementById("albuns").value = musicas.artist.albums.item[i].desc
+        document.getElementById("albuns").value += ' ' + musicas.artist.albums.item[i].desc
     }
 }
