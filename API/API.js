@@ -6,6 +6,7 @@ async function API() {
     const musicas = await dados.json();
     console.log(musicas);
 
-    document.getElementById(albuns).value = musicas.artist.albums.item[0].desc
-
+    for (let i = 0;i < musicas.artist.albums.item.length;i++){
+        document.getElementById("albuns").value = musicas.artist.albums.item[i].desc
+    }
 }
