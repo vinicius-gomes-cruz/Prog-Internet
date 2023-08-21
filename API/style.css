@@ -70,6 +70,7 @@ body {
 }
 
 .inputbox input {
+    color: white;
     position: absolute;
     background-color: var(--primary-color);
     width: 100%;
@@ -108,6 +109,14 @@ body {
     font-size: bold;
     border-radius: 2px; 
 
+}
+
+.infos {
+    display: flex;
+}
+
+#albuns li {
+    margin-left: 40px;
 }
 
 footer {
